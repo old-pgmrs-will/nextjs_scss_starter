@@ -1,0 +1,59 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+h1{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h2{
+	font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text_center{
+  text-align: center;
+}
+
+.text_underline{
+  text-decoration: underline;
+}
+
+.nav_links{
+  margin-top: 2rem;
+}
+
+.contents{
+  @include m.flex(center, center);
+  height: v.$h-screen;
+  width: v.$w-screen;
+  background-image: v.$gradient-linear;
+  padding: 8px;
+}
+
+.page_title{
+  &-main{
+    color: v.$white;
+    text-align: center;  
+  }
+  &-sub{
+    margin-top: 2rem;
+    color: v.$white;
+    text-align: center;  
+  }
+}
+
+.page_message{
+  margin-top: 1rem;
+  color: #e4c7f5;
+}

@@ -1,0 +1,78 @@
+/**
+A modern CSS reset + コメント翻訳
+https://github.com/hankchizljaw/modern-css-reset
+*/
+
+// box-sizing ルール
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// margin のデフォルト値を 0 にリセット
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+// リスト用途のUL,OL要素のデフォルト・スタイルを除去
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+// 要素のrootとなるHTML全体、ページ内スクロールをスムーズに
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+// body要素のデフォルト設定
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+// class属性を持たない A 要素はデフォルトスタイルを取得
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+// 画像の扱いを簡単に
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+// フォーム系要素のフォントは継承する
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// アニメーションやトランジションを表示したくない場合用に、すべてのアニメーションやトランジションを削除
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

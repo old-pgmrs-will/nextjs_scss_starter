@@ -1,0 +1,19 @@
+// some mixins
+
+// @include m.m-0;
+@mixin m-0{
+  margin: 0;
+}
+
+// @include m.mx-auto;
+@mixin mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// @include m.flex(center, center);
+@mixin flex($justify-content: unset, $align-items: unset){
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

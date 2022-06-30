@@ -1,0 +1,9 @@
+/** index.tsx 用のスタイル定義 
+  .tsx 内では
+    import styles from '../styles/Index.module.scss'
+    <p className={styles.messageSub}>...</p>
+  といった使い方をする。
+*/
+.messageSub {
+  color: #e4c7f5;
+}

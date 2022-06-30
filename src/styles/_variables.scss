@@ -1,0 +1,15 @@
+// some variables.
+
+// media query
+$pc: 'only screen and (min-width:769px) ';
+$sp: 'only screen and (max-width:768px) ';
+
+// screen size
+$h-screen: 100vh;
+$w-screen: 100vw;
+
+// color examples
+$white: #fff;
+$light-grey: #CCC;
+$light-blue: #c6d8f5;
+$gradient-linear: linear-gradient(146deg, rgba(190,157,255,1) 0%, rgba(171,130,252,1) 50%, rgba(113,53,163,1) 100%);
