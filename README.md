@@ -11,6 +11,8 @@
 
   で構成されています。
 
+<img src="https://user-images.githubusercontent.com/102408514/176702815-10ec5f2c-1f56-4a57-9a48-a4dd37450523.png" width="50%" />
+
 - 想定使用者層
   - webプログラミング初学者
   - HTML + CSS + JavaScript + jQueryからステップアップしたいが、何から手を付けて良いか迷っている方
